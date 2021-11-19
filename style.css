@@ -11,6 +11,8 @@
 #loginBtn{
   border-radius: 30px !important;
   width: 150px!important;
+  margin-left: 8px !important;
+  margin-right: 8px !important;
 }
 .rtdc-cover{
   /* size: cover; */
