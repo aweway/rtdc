@@ -1,8 +1,7 @@
 .awewaylogo{
-  width: 100px !important;
-  height: 50px !important;
-  margin-left:280px !important;
-  margin-top: 13px !important;
+  width: 80px !important;
+  height: 60px !important;
+  margin-top: 20px !important ;
 }
 .rtdc-logo{
   width: 100px!important;
@@ -11,8 +10,8 @@
 #loginBtn{
   border-radius: 30px !important;
   width: 150px!important;
-  margin-left: 10px !important;
-  margin-right: 10px !important;
+  margin-left: 8px !important;
+  margin-right: 8px !important;
 }
 .rtdc-cover{
   /* size: cover; */
@@ -24,3 +23,9 @@ width: 100% !important;
 height: 100% !important;
 }
 
+.text{
+  color: darkblue !important;
+  margin-top:38px !important;
+  margin-left: 222px !important;
+  margin-right:5px !important ;
+}
