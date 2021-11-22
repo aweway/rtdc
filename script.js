@@ -15,3 +15,12 @@ exampleCheck1.onclick = () => {
 // forget-password.onclick = () => {
   
 // }
+
+// const llc-video-poster = document.querySelector("#llc-video-poster");
+// llc-video-poster.autoplay = true;
+
+var vid = document.getElementById("llc-video-poster");
+function enableAutoplay() { 
+  vid.autoplay = true;
+  vid.load();
+}
