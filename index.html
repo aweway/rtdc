@@ -1,127 +1,263 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="" content="">
-  <title>RTDC</title>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="" />
+    <title>RTDC</title>
 
-  <!-- CSS only -->
+    <!-- CSS only -->
 
-  <link href="./boostrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="./boostrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-  <!-- this is fontaswesome link -->
-  <link rel="stylesheet" href="./fontawsome.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- this is fontaswesome link -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-  <!-- this is own css link -->
-  <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+    <!-- this is own css link -->
+    <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <br />
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <!--    Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          id="loginBtn"
+        >
+          <i class="fas fa-user-circle"></i> Login
+        </button>
+        <img class="rtdc-logo" src="./rtdc-logo.png" alt="rtdc-logo" />
+        <button
+          class="nav-link active"
+          id="nav-home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-home"
+          type="button"
+          role="tab"
+          aria-controls="nav-home"
+          aria-selected="true"
+        >
+          <i class="fas fa-home"></i> Home
+        </button>
+        <button
+          class="nav-link"
+          id="nav-explore-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-explore"
+          type="button"
+          role="tab"
+          aria-controls="nav-explore"
+          aria-selected="false"
+        >
+          <i class="fas fa-globe-asia"></i> Explore
+        </button>
+        <button
+          class="nav-link"
+          id="nav-contact-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-contact"
+          type="button"
+          role="tab"
+          aria-controls="nav-contact"
+          aria-selected="false"
+        >
+          <i class="fas fa-address-book"></i> Contact
+        </button>
+        <h6 class="text">Power by</h6>
+        <img class="awewaylogo" src="./awewalogo.png" alt="logo" />
+        <!-- this is rtdc and awewa logo -->
 
-</head>
-<body>
-  <br />
-  <nav>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-  <!--    Button trigger modal -->
-     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="loginBtn">
-       <i class="fas fa-user-circle"></i> Login
-     </button>
-  <img class="rtdc-logo" src="./rtdc-logo.png" alt="rtdc-logo" />
-      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-home"></i> Home</button>
-      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-globe-asia"></i> Explore</button>
-      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fas fa-address-book"></i> Contact</button>
-      <h6 class="text">Power by</h6>
-<img class="awewaylogo" src="./awewalogo.png" alt="logo" />
-      <!-- this is rtdc and awewa logo -->
-     <!--  <h6 class="topLogo">RTDC<span class="fo"> from </span>awewa</h6> -->
-      
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Sign In & Sign Up</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title ms-auto" id="exampleModalLabel">Sign In & Sign Up</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <div class="loginForm">
+                      <label for="exampleInputEmail1" class="form-label"
+                        id="e-p">Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="e-p-l"
+                        aria-describedby="emailHelp"
+                      />
+                    </div>
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                  <div class="loginForm2">
+                      <label for="exampleInputPassword1" class="form-label"
+                        id="e-p">Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="e-p-l-i"
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Check me out</label
+                    >
+                  </div>
+                  <div class="mb-md-3 m-3 ms-3" id="f-n">
+                  <button type="submit" class="btn btn-primary ms-3">Login</button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary ms-3"
+                      id="forget-password"
+                    >
+                      Forget password
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary ms-3"
+                      id="creat-new-account"
+                    >
+                      Creat New Account
+                    </button>
+                  </div>
+                </div>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="nav-home"
+        role="tabpanel"
+        aria-labelledby="nav-home-tab"
+      >
+        <!-- This is home page start -->
+        <br />
+        <img class="rtdc-cover" src="./rtdc-cover.png" alt="rtdc-cover" />
+        <br />
+        <br />
+        <img class="course" src="./course.png" alt="course.png" />
+      </div>
+      <!-- This is home page ending -->
+      <div
+        class="tab-pane fade"
+        id="nav-explore"
+        role="tabpanel"
+        aria-labelledby="nav-explore-tab"
+      >
+        <br />
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./LLC.png"
+                class="img-fluid rounded-start"
+                alt="llc-logo"
+              />
             </div>
-            <div class="modal-body">
-<form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Login</button>
-</form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" id="forget-password">Forget password</button>
-              <p>or</p>
-              <button type="button" class="btn btn-primary" id="creat-new-account">Creat New Account</button>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Learning Language Center</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-       </div>
-    </div>
-  </nav>
-  <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-      <!-- This is home page start -->
-      <br />
-      <img class="rtdc-cover" src="./rtdc-cover.png" alt="rtdc-cover" />
-      
-    </div>
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-      <br />
-      <div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="./LLC.png" class="img-fluid rounded-start" alt="llc-logo">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="./2so-logo.png" class="img-fluid rounded-start" alt="2so-logo">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="./awewa.png" class="img-fluid rounded-start" alt="awewa-logo">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div>
-      <!-- <div class="card">
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./2so-logo.png"
+                class="img-fluid rounded-start"
+                alt="2so-logo"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">2S0 - Scholarship Opportunities Searching Organisation</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./awewa.png"
+                class="img-fluid rounded-start"
+                alt="awewa-logo"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Aweway Orgnization</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="card">
   <div class="card-body">
     <div class="llc-frame">
       <div class="llc-logo-frame">
@@ -139,24 +275,48 @@
     <a href="https://www.facebook.com/llclearninglanguagescenter/" class="btn btn-primary">LLC - Learning Langue Center</a>
   </div>
   </div> -->
-</div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-      <br />
-      <img class="contact-cover" src="./contact-cover.png" alt="contact-cover" />
-      <h4 class="pragraph">Rekhine Technological Deployment Center - RTDC မိတ်ဆက်</h4>
-      <p class="pragraph">Rekhine Technological Deployment Center - RTDC ကို May 28 2021 တွင် ရခိုင့် နည်းပညာကျောင်းသားများ မှ ရခိုင့် အမျိုးသား ဖွံ့ဖြိုးတိုး တက်ရေးကို မျှော်မှန်းလျှက် (NGO) အစိုးရ မဟုတ်သော အဖွဲ့အစည်း များနှင့် ချိတ်ဆက်၍ ဖွဲ့စည်းတည်ထောင်ခဲ့ပါသည်။
-
-Rekhine Technological Deployment Center ဟူ၍ အမည်ပေးရာတွင် ရခိုင်ဟူသော ဝေါ်ဟာရအား ပုံမှန်ရေးသားနေကြ ပုံစံအတိုင်း "Rakhine" ဟူသော အသုံးအနုန်းအား မသုံးဘဲ ရခိုင်လူမျိုးများ၏ အာရင်းအာသံ ကိုသာ အသုံးပြုလိုသောကြောင်း "Rekhine" ဟူ၍ သုံးနုန်း အမည်ပေးခဲ့ခြင်း ဖြစ်ပါသည်။
-
-ရခိုင်လူမျိုးများ အလုပ်အကိုင် အခွင့်အလမ်းများ ရရှိနိင်ရေး ဦးတည် ရည်ရွယ်လျှက် ဆက်စပ်နိင် သမျှသော သင်တန်းများနှင့် အလုပ်အကိုင် အခွင့်အလမ်းများအား ဖန်တီးပေးခြင်း၊ လမ်းညွှန်ပေးခြင်းများ ပြုလုပ်နိင်ရန် စီစဉ်လျှက် ရှိပါသည်။
-
-ရခိုင်တစ်ပြည်လုံးရှိ လုပ်ငန်းများ အားလုံး နှင့် ဆက်သွယ်နိုင်ရန် ကြိုးပန်းလျှက်ရှိပြီး အခြားလုပ်ငန်းသစ်များ ပေါ်ပေါက်လာရေးကို လည်း အလေးထားကာ အခွင့်အလမ်း သစ်များ ရရှိနိင်ရေး လုပ်ဆောင်ချက်များ ကို အစွမ်းကို ကြိုးပမ်းလျှက် ရှိပါသည်။
-</p>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="nav-contact"
+        role="tabpanel"
+        aria-labelledby="nav-contact-tab"
+      >
+        <br />
+        <img
+          class="contact-cover"
+          src="./contact-cover.png"
+          alt="contact-cover"
+        />
+        <h4 class="pragraph">
+          Rekhine Technological Deployment Center - RTDC မိတ်ဆက်
+        </h4>
+        <p class="pragraph">
+          Rekhine Technological Deployment Center - RTDC ကို May 28 2021 တွင်
+          ရခိုင့် နည်းပညာကျောင်းသားများ မှ ရခိုင့် အမျိုးသား ဖွံ့ဖြိုးတိုး
+          တက်ရေးကို မျှော်မှန်းလျှက် (NGO) အစိုးရ မဟုတ်သော အဖွဲ့အစည်း များနှင့်
+          ချိတ်ဆက်၍ ဖွဲ့စည်းတည်ထောင်ခဲ့ပါသည်။ Rekhine Technological Deployment
+          Center ဟူ၍ အမည်ပေးရာတွင် ရခိုင်ဟူသော ဝေါ်ဟာရအား ပုံမှန်ရေးသားနေကြ
+          ပုံစံအတိုင်း "Rakhine" ဟူသော အသုံးအနုန်းအား မသုံးဘဲ ရခိုင်လူမျိုးများ၏
+          အာရင်းအာသံ ကိုသာ အသုံးပြုလိုသောကြောင်း "Rekhine" ဟူ၍ သုံးနုန်း
+          အမည်ပေးခဲ့ခြင်း ဖြစ်ပါသည်။ ရခိုင်လူမျိုးများ အလုပ်အကိုင်
+          အခွင့်အလမ်းများ ရရှိနိင်ရေး ဦးတည် ရည်ရွယ်လျှက် ဆက်စပ်နိင် သမျှသော
+          သင်တန်းများနှင့် အလုပ်အကိုင် အခွင့်အလမ်းများအား ဖန်တီးပေးခြင်း၊
+          လမ်းညွှန်ပေးခြင်းများ ပြုလုပ်နိင်ရန် စီစဉ်လျှက် ရှိပါသည်။
+          ရခိုင်တစ်ပြည်လုံးရှိ လုပ်ငန်းများ အားလုံး နှင့် ဆက်သွယ်နိုင်ရန်
+          ကြိုးပန်းလျှက်ရှိပြီး အခြားလုပ်ငန်းသစ်များ ပေါ်ပေါက်လာရေးကို လည်း
+          အလေးထားကာ အခွင့်အလမ်း သစ်များ ရရှိနိင်ရေး လုပ်ဆောင်ချက်များ ကို
+          အစွမ်းကို ကြိုးပမ်းလျှက် ရှိပါသည်။
+        </p>
+      </div>
     </div>
-  </div>
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="./bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="./script.js" type="text/javascript" charset="utf-8"></script>
-</body>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="./bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
 </html>

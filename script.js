@@ -1,5 +1,5 @@
 const exampleCheck1 = document.querySelector("#exampleCheck1");
-const exampleInputPassword1 = document.querySelector("#exampleInputPassword1");
+const exampleInputPassword1 = document.querySelector("#e-p-l-i");
 console.log(exampleInputPassword1)
 
 exampleCheck1.onclick = () => {

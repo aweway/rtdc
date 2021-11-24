@@ -1,19 +1,20 @@
 .awewaylogo{
   width: 80px !important;
   height: 60px !important;
-  margin-top: 20px !important ;
 }
 .rtdc-logo{
-  width: 100px!important;
-  height: 100px!important;
+  width: 70px!important;
+  height: 70px!important;
 }
 #loginBtn{
   border-radius: 30px !important;
   width: 150px!important;
   margin-left: 8px !important;
   margin-right: 8px !important;
+  text-align: center !important;
+  background-color: rgba(26, 102, 202, 0.616);
 }
-.rtdc-cover{
+.rtdc-cover, .course{
   /* size: cover; */
   width: 100% !important;
   height: 100% !important;
@@ -25,8 +26,8 @@ height: 100% !important;
 
 .text{
   color: darkblue !important;
-  margin-top:38px !important;
-  margin-left: 218px !important;
+  margin-top:20px !important;
+  margin-left: 600px !important;
   margin-right:5px !important ;
 }
 .pragraph{
@@ -44,4 +45,36 @@ height: 100% !important;
 }
 .llc-logo-frame{
   display: flex;
+}
+.modal-title{
+  text-align: center !important;
+  justify-content: center !important;
+}
+.modal-header h5{
+  color: rgb(13, 79, 201);
+  justify-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+.loginForm, .loginForm2{
+  display: flex !important;
+}
+#f-n{
+  display: flex;
+}
+#e-p{
+  width: 25%;
+  margin-top: 10px;
+}
+#e-p-l-i{
+  width: 75%;
+}
+#e-p-l{
+  width: 75%;
+}
+#creat-new-account{
+  background-color: rgb(30, 112, 57);
+}
+#exampleModal{
+  background-color: rgba(128, 128, 128, 0.486);
 }
